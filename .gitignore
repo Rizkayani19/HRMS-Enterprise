@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+.pytest_cache/
+
+# Secrets - never commit
+.env
+.env.*
+!.env.example
+
+# Databases and backups
+*.sqlite3
+*.db
+*.dump
+*.sql
+backups/
+
+# Django
+backend/staticfiles/*
+!backend/staticfiles/.gitkeep
+media/
+
+# Node (frontend/dist is committed on purpose so the app runs without Node.js)
+node_modules/
+
+# Logs / OS / IDE
+*.log
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
